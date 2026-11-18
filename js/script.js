@@ -1,4 +1,7 @@
-   const t = document.querySelector('.menu-toggle'), n = document.getElementById('site-nav');
+document.addEventListener("contextmenu",(event)=>{
+event.preventDefault()
+})
+const t = document.querySelector('.menu-toggle'), n = document.getElementById('site-nav');
       t.addEventListener('click', () => { const o = n.classList.toggle('open'); t.setAttribute('aria-expanded', o) });
       n.addEventListener('click', e => { if (e.target.closest('a')) { n.classList.remove('open'); t.setAttribute('aria-expanded', false) } });
       (function () {
